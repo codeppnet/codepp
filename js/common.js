@@ -106,7 +106,7 @@ $.ajaxSetup({error:function(){
 //从服务器上下载规则。
 function load_rules_from_server(complete)
 {
-	$.ajax("rules/"+g_config["code_lang"]+"/"+g_config["code_lang"]+".stx",
+	$.ajax(g_cdn+"rules/"+g_config["code_lang"]+"/"+g_config["code_lang"]+".stx",
 		{success:function(data,textStatus,jqXHR){
 				//加载stx成功，开始剖析。
 				g_stxMap=parseStx(data);
@@ -114,7 +114,7 @@ function load_rules_from_server(complete)
 				{
 					if(g_config["ctags"]==null)
 					{
-						$.ajax("ctags/index.php",
+						$.ajax(g_cdn+"ctags/index.php",
 						{"success":function(data,textStatus,jqXHR){
 								g_config["ctags"]=parse_ctags(data)
 								complete();
@@ -129,7 +129,7 @@ function load_rules_from_server(complete)
 				//如果本地没有配色文件，就去服务器上下载配色文件
 				if(g_config["syntax_color"]==null)
 				{
-					$.ajax("rules/"+g_config["code_lang"]+"/"+g_config["code_lang"]+".color",
+					$.ajax(g_cdn+"rules/"+g_config["code_lang"]+"/"+g_config["code_lang"]+".color",
 						{"success":function(data,textStatus,jqXHR){
 								g_config["syntax_color"]=parseColor(data);
 								g_config["old_syntax_color"]=parseColor(data);
