@@ -114,7 +114,7 @@ function load_rules_from_server(complete)
 				{
 					if(g_config["ctags"]==null)
 					{
-						$.ajax(g_cdn+"ctags/index.php",
+						$.ajax("ctags/index.php",
 						{"success":function(data,textStatus,jqXHR){
 								g_config["ctags"]=parse_ctags(data)
 								complete();
