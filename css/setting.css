@@ -1,0 +1,389 @@
+body
+{
+	background-color:#fff;
+}
+#caption
+{
+	height:80px;
+	/*background-color:#434343;*/
+	background-color:#f07151;
+}
+.btn
+{
+	background-image:url(../images/setting.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+#goback_display
+{
+	height:100%;
+	background-position:-320px 20px;
+	height:100%;
+	padding-left:40px;
+	padding-right:16px;
+}
+#goback_display:hover
+{
+	background-color:#ee876d;
+}
+#setting_icon
+{
+	/*float:right;*/
+	position:absolute;
+	top:0;
+	right:0;
+	width:220px;
+	height:100%;
+	background-position:-320px -82px;
+	padding-left:70px;
+}
+#leftbar
+{
+	width:300px;
+	height:300px;
+	background-color:#434343;
+	display:inline-block;
+	position:absolute;
+	overflow:hidden;
+	min-height:492px;
+}
+#setting_body
+{
+	position:relative;
+}
+#setting_page
+{
+	height:550px;
+	background-color:#eff0f0;
+	min-width:970px;
+	font-family:Calibri Light;
+}
+.setting_item
+{
+	height:164px;
+	width:300px;
+	overflow:hidden;
+	position:relative;
+	padding-top:95px;
+	text-align:center;
+	color:#FFF;
+}
+.setting_item_active
+{
+	background-color:#eff0f0;
+	color:#434343;
+}
+#appearance
+{
+	background-position:6px 38px;
+}
+.appearance_active
+{
+	background-position:-409px 38px !important;
+}
+.language_active
+{
+	background-position:-409px -126px !important;
+}
+.help_active
+{
+	background-position:-409px -300px !important;
+}
+#language
+{
+	background-position:6px -126px;
+}
+#help
+{
+	background-position:6px -300px;
+}
+#setting_content
+{
+	padding-left:340px;
+	padding-top:30px;
+	padding-right:30px;
+}
+#setting_language ul
+{
+	list-style:none;
+	border:solid 1px #b8bcc4;
+	border-radius:5px;
+	padding:5px 0;
+	cursor:default;
+	position:relative;
+	font-size:25px;
+	background-color:#f7f8f8;
+	margin-top:10px;
+}
+.list_small_left_bar
+{
+	display:inline-block;
+	width:3px;
+	height:100px;
+	position:absolute;
+	background-color:#f07151;
+	left:0;
+	display:none;
+}
+#setting_language ul li
+{
+	padding:0 5px;
+	position:relative;
+	overflow:hidden;
+}
+#setting_language ul li:hover
+{
+	background-color:#f5ba9d;
+}
+
+.setting_item_small_left_bar
+{
+	position:absolute;
+	background-color:#f07151;
+	width:5px;
+	height:164px;
+	z-index:100;
+}
+.setting_item>span
+{
+	font-size:24px;
+}
+#caption>span
+{
+	font-size:40px;
+	color:#FFF;
+	height:80px;   
+	line-height:80px;  
+}
+#change_color
+{
+	display:inline-block;
+	width:300px;
+	height:160px;
+	background-color:#f7f8f8;
+	border:solid 1px #b8bcc4;
+	border-radius:10px;
+	vertical-align:top;
+	margin-left:20px;
+	position:relative;
+}
+#change_color>div
+{
+	margin-top:12px;
+	text-align:center;
+	padding-left:60px;
+}
+#change_color>#color_preview
+{
+	width:45px;
+	height:45px;
+	border:1px #8e8e8e solid;
+	position:absolute;
+	top:37px;
+	left:15px;
+	margin-top:0px;
+	padding:0;
+}
+#change_color>#color_preview>div
+{
+	width:37px;
+	height:37px;
+	margin-top:3px;
+	margin-left:3px;
+	background-color:#000;
+}
+#change_color>div input
+{
+	vertical-align:middle;
+	margin-left:20px;
+	outline:none;
+	background-color:#E6E6E6;
+	border:1px solid #a2a2a2;
+	padding:3px;
+	border-radius:3px;
+	text-align:center;
+}
+#line_number_ctrl *
+{
+	vertical-align:middle;
+}
+#line_number_ctrl span
+{
+	font-size:25px;
+}
+/*列表框的样式描述*/
+.list
+{
+	border:solid 1px #b8bcc4;
+	background-color:#f7f8f8;
+	border-radius:5px;
+	list-style:none;
+	width:230px;
+	height:160px;
+	padding:5px 0;
+	font-size:20px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	display:inline-block;
+}
+.list>li
+{
+	padding:0 9px;
+	position:relative;
+	overflow:hidden;
+}
+.list>li:hover
+{
+	background-color:#f5ba9d;
+}
+.list>li>span
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:5px;
+	height:50px;
+	background-color:#f07151;
+	display:none;
+}
+
+/*列表框的样式描述结束*/
+#setting_appearance>a
+{
+	font-size:36px;
+	display:block;
+	margin-bottom:10px;
+	margin-top:30px;
+}
+/*下拉框的样式描述开始*/
+.select ul
+{
+	list-style:none;
+/*		display:none;*/
+	position:absolute;
+	background-color:#525252;
+	border-radius:5px;
+	color:#fff;
+	padding:5px 0;
+	top:15px;
+	display:none;
+	opacity:0;
+	width:100%;
+}
+.select ul li
+{
+	padding:3px 7px;
+}
+.select ul li:hover
+{
+	background-color:#c56a4c;
+	background-image:url(../images/pen.png);
+	background-repeat:no-repeat;
+	background-position:-2px -646px;
+}
+.select>.button
+{
+	width:100%;
+	background-color:#525252;
+	color:#FFF;
+	border:none;
+	outline:none;
+	text-align:left;
+	padding:5px 10px;
+	border-radius:5px;
+	position:relative;
+	display:inline-block;
+}
+.select
+{
+	position:relative;
+	display:inline-block;
+	width:160px;
+}
+.up_arrow
+{
+	display:inline-block;
+	width:12px;
+	height:15px;
+	border-top:rgba(0,0,0,0) solid 7.5px;
+	border-bottom:7.5px #525252 solid;
+	border-left:rgba(0,0,0,0) solid 6px;
+	border-right:rgba(0,0,0,0) solid 6px;
+	box-sizing:border-box;
+	top:-14px;
+	position:absolute;
+	right:5px;
+}
+.down_arrow
+{
+	display:inline-block;
+	width:12px;
+	height:15px;
+	right:5px;
+	top:12px;
+	border-top:7.5px #FFF solid;
+	border-bottom:rgba(0,0,0,0) solid 7.5px;
+	border-left:rgba(0,0,0,0) solid 6px;
+	border-right:rgba(0,0,0,0) solid 6px;
+	box-sizing:border-box;
+	position:absolute;
+	z-index:10;
+}
+/*下拉框样式描述结束*/
+/*滑动条样式描述*/
+.slider
+{
+	width:140px;
+	height:5px;
+	display:inline-block;
+	alignment-baseline:central;
+	position:relative;
+	border-radius:5px;
+}
+/*滑动条上的滑块。*/
+.slider>.slider_block
+{
+	width:12px;
+	height:12px;
+	display:inline-block;
+	position:absolute;
+	background-color:#E4EBF1;
+	border-radius:6px;
+	box-shadow:#aaa 0 0 3px;
+	top:-3px;
+	left:0px;
+	border:#c3c3c3 1px solid;
+}
+/*滑动条样式描述结束*/
+/*按钮*/
+.button
+{
+	padding:5px 30px;
+	background-color:#f28e76;
+	border-radius:5px;
+	border:1px solid #de684c;
+}
+.button:active
+{
+	background-color:#df6f4f;
+}
+/*按钮结束*/
+/*switcher样式描述*/
+.switcher
+{
+	display:inline-block;
+	width:145px;
+	height:42px;
+	background-position:-292px -487px;
+	position:relative;
+}
+.switcher>span
+{
+	top:-1px;
+	display:inline-block;
+	position:absolute;
+	background-position:-292px -380px;
+	height:42px;
+	width:80px;
+}
+/*switcher样式描述结束*/

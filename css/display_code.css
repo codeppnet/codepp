@@ -1,0 +1,124 @@
+
+#display_code
+{
+	background-color:#fff;
+	padding-bottom:40px;
+	padding-top:5px;
+}
+#display_code .linenumber
+{
+	color:#D7634B;
+	padding-left:5px;
+}
+#display_code .fold
+{
+	padding-left:15px;
+	text-align:center;
+	position:relative;
+}
+#display_code .fold span
+{
+	display:inline-block;
+	height:100%;
+	position:absolute;
+	font-size:9px;
+}
+#display_code .fold_start span
+{
+	width:11px;
+	height:11px;
+	margin-top:-6px;
+	margin-left:-5px;
+	top:50%;
+	left:50%;
+	border:1px solid #a8a8a8;
+	background:url(../images/fold_icon.png) no-repeat;
+	background-position:1px -64px;
+	background-color:#FFF;
+}
+#display_code .expand span
+{
+	background-position:1px 1px;
+}
+#display_code .fold_start span:hover
+{
+	
+}
+#display_code .fold_end span
+{
+	width:5px;
+	border-left:1px #a8a8a8 solid;
+	border-bottom:1px #a8a8a8 solid;
+	left:50%;
+}
+
+#display_code .fold_space span
+{
+	width:1px;
+	background-color:#a8a8a8;
+	left:50%;
+}
+
+.line
+{
+	padding:0;
+	position:relative;
+}
+
+.line>.linenumber
+{
+	background-color:#fff;
+	padding-right:5px;
+}
+.line>.line_code
+{
+	white-space:nowrap;
+}
+#drawing_board
+{
+	position:absolute;
+	z-index:10;
+}
+
+#jump_list
+{
+	position:fixed;
+	width:300px;
+	height:200px;
+	border:1px #DC7964 solid;
+	left:50%;
+	top:50%;
+	margin-top:-130px;
+	margin-left:-150px;
+	box-shadow:#DC7964 0 0 10px;
+	font-family:'Calibri Light';
+	display:none;
+	z-index:10;
+	background-color:#fff;
+}
+#jump_list>h,#jump_list>h2
+{
+	color:#DA6E54;
+	padding:1px 5px;
+}
+#jump_list ul
+{
+	padding-top:4px;
+	list-style:none;
+	overflow:auto;
+	height:130px;
+}
+#jump_list ul>li
+{
+	padding:0 5px;
+}
+
+#jump_list ul>li:hover
+{
+	background-color:#fce4dc;
+}
+
+.suspension_points
+{
+	border:1px #a8a8a8 solid;
+}

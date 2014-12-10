@@ -1,0 +1,22 @@
+#wait_page
+{
+	background-color:#fff;
+	font-family:'Calibri Light';
+}
+
+#wait_page .loading,#wait_page .fail
+{
+	background:url(../images/loading.gif) no-repeat;
+	background-position:5px 12px;
+	line-height:60px;
+	padding-left:45px;
+	position:absolute;
+	border:1px #DC7964 solid;
+	height:60px;
+	width:300px;
+	margin-top:-18px;
+	top:50%;
+	margin-left:-150px;
+	left:50%;
+	box-shadow:#DC7964 0 0 10px;
+}

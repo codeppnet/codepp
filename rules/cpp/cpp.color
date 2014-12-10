@@ -1,0 +1,7 @@
+Reserved words=#0000FF
+Compiler directives=#FF0000
+Line comment=#008000
+Block comment=#008000
+Quotation=#E100E1
+Quotation 2=#E100E1
+Number=#800080

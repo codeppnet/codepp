@@ -1,0 +1,40 @@
+#edit_page
+{
+	padding:10px 20px;
+	font-family:Calibri Light;
+	min-width:270px;
+	min-height:200px;
+}
+#edit_page>#code_txt
+{
+	width:100%;
+	height:99%;
+	cursor:auto;
+	padding:5px;
+	outline:none;
+	font-size:16px;
+}
+#edit_page #ok_btn
+{
+	display:inline-block;
+	background-color:#f28e76;
+	padding:5px 0;
+	width:25%;
+	border-radius:5px;
+	float:right;
+	text-align:center;
+	border:1px solid #de684c
+}
+#edit_page #ok_btn:active
+{
+	background-color:#df6f4f;
+}
+#edit_page #code_lang_select
+{
+	width:73%;
+}
+#edit_page>div
+{
+	padding:0 0;
+	margin-top:15px;
+}

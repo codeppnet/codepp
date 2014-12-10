@@ -1,0 +1,10 @@
+Reserved words=#0000FF
+PHP core functions=#FF0000
+PREFIX3=#008080
+Namespaces=#808000
+Line comment=#008000
+Line comment 2=#008000
+Block comment=#008000
+Quotation=#FF00FF
+Quotation 2=#FF00FF
+Number=#800080

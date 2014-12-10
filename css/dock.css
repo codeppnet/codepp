@@ -1,0 +1,261 @@
+.dock_one_row
+{
+	width:530px;
+	height:55px;
+	margin-left:-265px;
+}
+.dock_two_row
+{
+	width:300px;
+	height:100px;
+	margin-left:-150px;
+}
+#dock
+{
+	position:fixed;
+	bottom:0px;
+	left:50%;
+	background-color:#313131;
+	border-radius:10px 10px 0 0;
+	padding:7px 24px;
+	box-shadow:#000 0 0 10px;
+	z-index:20;
+}
+.dock_button
+{
+	width:50px;
+	height:44px;
+	display:inline-block;
+	float:left;
+	background-image:url(../images/icon.png);
+	background-repeat:no-repeat;
+}
+#pen
+{
+	background-position:12px -30px;
+}
+#jump_stack
+{
+	background-position:-38px -30px;
+}
+#goback
+{
+	background-position:-88px -30px;
+}
+#zoomin
+{
+	background-position:-135px -30px;
+}
+#zoomout
+{
+	background-position:-186px -30px;
+}
+#fold_all
+{
+	background-position:-237px -30px;
+}
+#expand_all
+{
+	background-position:-288px -30px;
+}
+#edit
+{
+	background-position:-336px -30px;
+}
+#setting
+{
+	background-position:-387px -30px;
+}
+.dock_button:hover
+{
+	background-color:#525151;
+}
+#bar
+{
+	position:absolute;
+	background-color:#d24726;
+	height:4px;
+	width:50px;
+	bottom:0;
+	left:24px;
+}
+.pinned
+{
+	background-position:-450px 3px;
+	display:block;
+}
+.unpinned
+{
+	background-position:-450px -42px;
+	display:none;
+}
+#pin
+{
+	width:22px;
+	height:22px;
+	display:inline-block;
+	float:left;
+	margin-left:10px;
+	margin-top:9px;
+	background-image:url(../images/icon.png);
+	background-repeat:no-repeat;
+	border:solid rgba(0,0,0,0) 1px;
+}
+#pin:hover
+{
+	border:solid #d24726 1px;
+}
+#jump_stack_list
+{
+	width:243px;
+	position:absolute;
+	border:1px #adadad solid;
+	background-color:#f7f7ef;
+	border-radius:6px;
+	list-style:none;
+	bottom:110%;
+	padding:6px;
+	display:none;
+	left:-22px;
+	font-family:Calibri Light;
+	overflow:visible;
+	margin-bottom:20px;
+}
+#jump_stack_list .down_arrow
+{
+	width:17px;
+	background-position:-112px -546px;
+	position:absolute;
+	border:none;
+	top:100%;
+	right:50%;
+	margin-right:-8.5px;
+}
+#jump_stack_list li
+{
+	padding:0 12px;
+	overflow:hidden;
+}
+#jump_stack_list li:hover
+{
+	background-color:#fce4dc;
+}
+#jump_stack_list .selected
+{
+	background-image:url(../images/pen.png);
+	background-repeat:no-repeat;
+	background-position:-150px -607px;
+}
+#config_pen
+{
+	width:223px;
+	height:220px;
+	position:absolute;
+	display:none;
+	bottom:110%;
+	left:-60px;
+	background-position:0 0;
+	list-style:none;
+	padding:6px;
+}
+#config_pen>li
+{
+	height:34px;
+	width:210px;
+	margin-bottom:4px;
+	padding:7px 0;
+	padding-left:45px;
+	font-family:Calibri Light;
+	padding-right:20px;
+}
+#config_pen>li:nth-child(1):hover,
+	#config_pen>li:nth-child(2):hover,
+	#config_pen>li:nth-child(3):hover
+{
+	background-color:#fce4dc;
+}
+
+#config_pen>li:last-child
+{
+	background-color:rgba(0,0,0,0);
+	padding:0;
+	text-align:center;
+}
+#config_pen>#default_pen
+{
+	background-position:-2px -222px;
+}
+#config_pen>#eraser
+{
+	background-position:-2px -259px;
+}
+#config_pen>#erase_all_ink
+{
+	background-position:-2px -297px;
+}
+#config_pen>#pen_weigth
+{
+	background-position:-2px -335px;
+}
+#config_pen>#pen_weigth>span
+{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	float:right;
+	margin-top:-2px;
+	margin-left:2px;
+}
+#config_pen>#pen_weigth>span:hover
+{
+	background-color:#fce4dc;
+}
+#config_pen .selected
+{
+	background-color:#f2ba9d !important;
+}
+#config_pen>#pen_weigth>#pen_weigth_1
+{
+	background-position:-13px -377px;
+}
+#config_pen>#pen_weigth>#pen_weigth_2
+{
+	background-position:-47px -377px;
+}
+#config_pen>#pen_weigth>#pen_weigth_4
+{
+	background-position:-81px -377px;
+}
+.pen_icon
+{
+	background-image:url(../images/pen.png);
+	background-repeat:no-repeat;
+}
+#config_pen>#pen_color>span
+{
+	border:1px solid rgba(0,0,0,0);
+	display:inline-block;
+	height:26px;
+	width:26px;
+	padding:2px;
+	margin-right:10px;
+}
+#config_pen>#pen_color>span:last-child
+{
+	margin-right:0;
+}
+#config_pen>#pen_color>span:hover
+{
+	background-color:#fce3dc;
+}
+#config_pen>#pen_color>span>span
+{
+	display:inline-block;
+	height:20px;
+	width:20px;
+}
+#config_pen>#pen_color .selected
+{
+	border:1px solid red;
+	background-color:rgba(0,0,0,0) !important;
+}
